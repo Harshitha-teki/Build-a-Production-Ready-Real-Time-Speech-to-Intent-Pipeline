@@ -1,0 +1,32 @@
+services:
+  pipeline_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./samples:/app/samples:ro
+      - ./results:/app/results
+      - ./models:/app/models
+    environment:
+      - ASR_MODEL_SIZE=tiny.en
+      - ASR_COMPUTE_TYPE=int8
+      - ASR_DEVICE=cpu
+      - ASR_CPU_THREADS=4
+      - NLU_MODEL_PATH=/app/models/nlu/intent_classifier.joblib
+      - NLU_VECTORIZER_PATH=/app/models/nlu/tfidf_vectorizer.joblib
+      - TTS_VOICE=en-us
+      - TTS_RATE=150
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          memory: 2G

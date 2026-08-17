@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+models/nlu/*.joblib
+results/latency_report.json
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
