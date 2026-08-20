@@ -3,7 +3,6 @@ __pycache__/
 *.pyo
 .env
 models/nlu/*.joblib
-results/latency_report.json
 *.egg-info/
 dist/
 build/
