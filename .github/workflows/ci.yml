@@ -1,0 +1,35 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  evaluate-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: python -m pytest -q
+
+      - name: Run the evaluation harness
+        run: python run_evaluation.py
+
+      - name: Verify committed artifacts match a fresh run
+        run: |
+          python -m pytest -q tests/test_regression.py::test_committed_report_satisfies_contract
+          python -m pytest -q tests/test_pipelines.py::test_committed_report_matches_committed_details
+
+      - name: Healthcheck on produced artifacts
+        run: python -m src.healthcheck

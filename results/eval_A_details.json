@@ -1,0 +1,738 @@
+[
+  {
+    "id": "acme_q001",
+    "question": "What is the monthly maintenance fee for the Summit Checking Account?",
+    "ground_truth_answer": "The Summit Checking Account charges a monthly maintenance fee of $12.00.",
+    "ground_truth_context_titles": [
+      "Summit Checking Account"
+    ],
+    "generated_answer": "The Summit Checking Account charges a monthly maintenance fee of $12.00.",
+    "retrieved_context_titles": [
+      "Summit Checking Account",
+      "Horizon Savings Account"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 2.139
+    }
+  },
+  {
+    "id": "acme_q002",
+    "question": "How can customers waive the monthly maintenance fee on a Summit Checking Account?",
+    "ground_truth_answer": "Customers can waive the monthly fee by maintaining a minimum daily balance of $1,500 or by setting up a direct deposit of at least $500 per month.",
+    "ground_truth_context_titles": [
+      "Summit Checking Account"
+    ],
+    "generated_answer": "The Summit Checking Account charges a monthly maintenance fee of $12.00.",
+    "retrieved_context_titles": [
+      "Summit Checking Account",
+      "Horizon Savings Account"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 0.07692307692307693,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.592
+    }
+  },
+  {
+    "id": "acme_q003",
+    "question": "Is there a minimum opening deposit required for the Summit Checking Account?",
+    "ground_truth_answer": "There is no minimum opening deposit required for the Summit Checking Account.",
+    "ground_truth_context_titles": [
+      "Summit Checking Account"
+    ],
+    "generated_answer": "There is no minimum opening deposit required for the Summit Checking Account.",
+    "retrieved_context_titles": [
+      "Summit Checking Account",
+      "Account Closure Policy"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.481
+    }
+  },
+  {
+    "id": "acme_q004",
+    "question": "How does Overdraft Protection cover a debit when there are not enough funds?",
+    "ground_truth_answer": "Overdraft Protection automatically transfers available funds from a linked savings account to cover a debit.",
+    "ground_truth_context_titles": [
+      "Overdraft Protection Policy",
+      "Horizon Savings Account"
+    ],
+    "generated_answer": "Overdraft Protection automatically transfers available funds from a linked savings account to cover a debit.",
+    "retrieved_context_titles": [
+      "Overdraft Protection Policy"
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.023
+    }
+  },
+  {
+    "id": "acme_q005",
+    "question": "What fee is charged for each automatic transfer triggered by Overdraft Protection?",
+    "ground_truth_answer": "Each automatic transfer triggered by Overdraft Protection costs a flat fee of $5.00.",
+    "ground_truth_context_titles": [
+      "Overdraft Protection Policy"
+    ],
+    "generated_answer": "Each automatic transfer triggered by Overdraft Protection costs a flat fee of $5.00.",
+    "retrieved_context_titles": [
+      "Overdraft Protection Policy"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.299
+    }
+  },
+  {
+    "id": "acme_q006",
+    "question": "What happens when the linked savings account also lacks sufficient funds for an Overdraft Protection transfer?",
+    "ground_truth_answer": "The transfer is declined and an overdraft occurs when the linked savings account lacks sufficient funds.",
+    "ground_truth_context_titles": [
+      "Overdraft Protection Policy"
+    ],
+    "generated_answer": "If the linked savings account also lacks sufficient funds, the transfer is declined and an overdraft occurs.",
+    "retrieved_context_titles": [
+      "Overdraft Protection Policy"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.818
+    }
+  },
+  {
+    "id": "acme_q007",
+    "question": "What annual percentage yield does the Horizon Savings Account earn on balances up to $25,000?",
+    "ground_truth_answer": "The Horizon Savings Account offers an annual percentage yield of 3.25 percent on balances up to $25,000.",
+    "ground_truth_context_titles": [
+      "Horizon Savings Account"
+    ],
+    "generated_answer": "The Horizon Savings Account offers an annual percentage yield of 3.25 percent on balances up to $25,000.",
+    "retrieved_context_titles": [
+      "Horizon Savings Account"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.71
+    }
+  },
+  {
+    "id": "acme_q008",
+    "question": "How many free withdrawals are allowed per statement cycle on the Horizon Savings Account?",
+    "ground_truth_answer": "Savings accounts allow up to six free withdrawals per statement cycle.",
+    "ground_truth_context_titles": [
+      "Horizon Savings Account"
+    ],
+    "generated_answer": "Savings accounts allow up to six free withdrawals per statement cycle.",
+    "retrieved_context_titles": [
+      "Horizon Savings Account"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.503
+    }
+  },
+  {
+    "id": "acme_q009",
+    "question": "What does a withdrawal beyond the sixth free withdrawal cost on the Horizon Savings Account?",
+    "ground_truth_answer": "Each withdrawal beyond the sixth free withdrawal costs $10.00.",
+    "ground_truth_context_titles": [
+      "Horizon Savings Account"
+    ],
+    "generated_answer": "Each withdrawal beyond the sixth free withdrawal costs $10.00.",
+    "retrieved_context_titles": [
+      "Horizon Savings Account"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.578
+    }
+  },
+  {
+    "id": "acme_q010",
+    "question": "How does the Interest Rate Tiering Policy reward higher balances?",
+    "ground_truth_answer": "The Interest Rate Tiering Policy applies higher rates to higher average daily balances.",
+    "ground_truth_context_titles": [
+      "Interest Rate Tiering Policy"
+    ],
+    "generated_answer": "Interest Rate Tiering Policy applies higher rates to higher average daily balances.",
+    "retrieved_context_titles": [
+      "Interest Rate Tiering Policy"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.415
+    }
+  },
+  {
+    "id": "acme_q011",
+    "question": "What rate applies to balances between $25,000 and $100,000 under the Interest Rate Tiering Policy?",
+    "ground_truth_answer": "Tier two covers balances from $25,000 to $100,000 at a rate 0.75 percentage points lower.",
+    "ground_truth_context_titles": [
+      "Interest Rate Tiering Policy",
+      "Horizon Savings Account"
+    ],
+    "generated_answer": "Under the Interest Rate Tiering Policy, the first $25,000 earns the full advertised rate.",
+    "retrieved_context_titles": [
+      "Interest Rate Tiering Policy"
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "correctness": 0.125,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.504
+    }
+  },
+  {
+    "id": "acme_q012",
+    "question": "How much cash back does the Atlas Credit Card earn on purchases?",
+    "ground_truth_answer": "The Atlas Credit Card earns 2 percent cash back on every purchase with no category limits.",
+    "ground_truth_context_titles": [
+      "Atlas Credit Card"
+    ],
+    "generated_answer": "The Atlas Credit Card earns 2 percent cash back on every purchase with no category limits.",
+    "retrieved_context_titles": [
+      "Atlas Credit Card",
+      "Foreign Transactions Policy"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.415
+    }
+  },
+  {
+    "id": "acme_q013",
+    "question": "What is the introductory annual percentage rate on the Atlas Credit Card?",
+    "ground_truth_answer": "The Atlas Credit Card offers an introductory annual percentage rate of 0 percent for the first 12 months.",
+    "ground_truth_context_titles": [
+      "Atlas Credit Card"
+    ],
+    "generated_answer": "The Atlas Credit Card offers an introductory annual percentage rate of 0 percent for the first 12 months.",
+    "retrieved_context_titles": [
+      "Atlas Credit Card"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.378
+    }
+  },
+  {
+    "id": "acme_q014",
+    "question": "Does the Atlas Credit Card charge an annual fee?",
+    "ground_truth_answer": "There is no annual fee for the Atlas Credit Card.",
+    "ground_truth_context_titles": [
+      "Atlas Credit Card"
+    ],
+    "generated_answer": "There is no annual fee for the Atlas Credit Card.",
+    "retrieved_context_titles": [
+      "Atlas Credit Card"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.326
+    }
+  },
+  {
+    "id": "acme_q015",
+    "question": "What fee applies to purchases made in a foreign currency under the Foreign Transactions Policy?",
+    "ground_truth_answer": "The Foreign Transactions Policy applies a 2.5 percent fee to purchases made in a foreign currency.",
+    "ground_truth_context_titles": [
+      "Foreign Transactions Policy",
+      "Atlas Credit Card"
+    ],
+    "generated_answer": "The Foreign Transactions Policy applies a 2.5 percent fee to purchases made in a foreign currency.",
+    "retrieved_context_titles": [
+      "Foreign Transactions Policy"
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.073
+    }
+  },
+  {
+    "id": "acme_q016",
+    "question": "Are U.S. dollar purchases made outside the country subject to a currency conversion fee?",
+    "ground_truth_answer": "Purchases in U.S. dollars made outside the country do not incur a currency conversion fee.",
+    "ground_truth_context_titles": [
+      "Foreign Transactions Policy"
+    ],
+    "generated_answer": "dollars made outside the country do not incur a currency conversion fee.",
+    "retrieved_context_titles": [
+      "Foreign Transactions Policy",
+      "Atlas Credit Card"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 0.875,
+      "groundedness": 1.0,
+      "p95_latency_ms": 0.951
+    }
+  },
+  {
+    "id": "acme_q017",
+    "question": "What is the starting annual percentage rate on the fixed-rate 30-year Pinnacle Mortgage?",
+    "ground_truth_answer": "The Pinnacle Mortgage offers a fixed-rate 30-year term starting at 6.25 percent annual percentage rate.",
+    "ground_truth_context_titles": [
+      "Pinnacle Mortgage"
+    ],
+    "generated_answer": "The Pinnacle Mortgage offers a fixed-rate 30-year term starting at 6.25 percent annual percentage rate.",
+    "retrieved_context_titles": [
+      "Pinnacle Mortgage",
+      "Vantage Auto Loan",
+      "Atlas Credit Card"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.349
+    }
+  },
+  {
+    "id": "acme_q018",
+    "question": "What down payment avoids private mortgage insurance on the Pinnacle Mortgage?",
+    "ground_truth_answer": "A 20 percent down payment avoids private mortgage insurance on the Pinnacle Mortgage.",
+    "ground_truth_context_titles": [
+      "Pinnacle Mortgage"
+    ],
+    "generated_answer": "A 20 percent down payment avoids private mortgage insurance on the Pinnacle Mortgage.",
+    "retrieved_context_titles": [
+      "Pinnacle Mortgage"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.557
+    }
+  },
+  {
+    "id": "acme_q019",
+    "question": "Does prepaying the Pinnacle Mortgage in full carry a prepayment penalty?",
+    "ground_truth_answer": "Prepaying the Pinnacle Mortgage in full carries no prepayment penalty.",
+    "ground_truth_context_titles": [
+      "Pinnacle Mortgage"
+    ],
+    "generated_answer": "Prepaying the Pinnacle Mortgage in full carries no prepayment penalty.",
+    "retrieved_context_titles": [
+      "Pinnacle Mortgage",
+      "Vantage Auto Loan"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.4
+    }
+  },
+  {
+    "id": "acme_q020",
+    "question": "How often are eligible cardholder accounts automatically reviewed for a credit limit increase?",
+    "ground_truth_answer": "The Credit Limit Increase Policy automatically reviews eligible cardholder accounts every six months.",
+    "ground_truth_context_titles": [
+      "Credit Limit Increase Policy",
+      "Atlas Credit Card"
+    ],
+    "generated_answer": "The Credit Limit Increase Policy automatically reviews eligible cardholder accounts every six months.",
+    "retrieved_context_titles": [
+      "Credit Limit Increase Policy"
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.431
+    }
+  },
+  {
+    "id": "acme_q021",
+    "question": "Does an automatic credit limit increase under the Credit Limit Increase Policy trigger a hard inquiry?",
+    "ground_truth_answer": "Automatic increases under the Credit Limit Increase Policy do not trigger a hard inquiry.",
+    "ground_truth_context_titles": [
+      "Credit Limit Increase Policy"
+    ],
+    "generated_answer": "Automatic increases under the Credit Limit Increase Policy do not trigger a hard inquiry.",
+    "retrieved_context_titles": [
+      "Credit Limit Increase Policy"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.386
+    }
+  },
+  {
+    "id": "acme_q022",
+    "question": "What is the starting annual percentage rate for new vehicles on the Vantage Auto Loan?",
+    "ground_truth_answer": "The Vantage Auto Loan offers borrow rates starting at 5.49 percent annual percentage rate for new vehicles.",
+    "ground_truth_context_titles": [
+      "Vantage Auto Loan"
+    ],
+    "generated_answer": "The Vantage Auto Loan offers borrow rates starting at 5.49 percent annual percentage rate for new vehicles.",
+    "retrieved_context_titles": [
+      "Vantage Auto Loan"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.438
+    }
+  },
+  {
+    "id": "acme_q023",
+    "question": "What loan terms are available on the Vantage Auto Loan?",
+    "ground_truth_answer": "Vantage Auto Loan terms range from 36 to 72 months depending on the vehicle age.",
+    "ground_truth_context_titles": [
+      "Vantage Auto Loan"
+    ],
+    "generated_answer": "Vantage Auto Loan terms range from 36 to 72 months depending on the vehicle age.",
+    "retrieved_context_titles": [
+      "Vantage Auto Loan"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.366
+    }
+  },
+  {
+    "id": "acme_q024",
+    "question": "Is there a prepayment penalty if the Vantage Auto Loan is paid off early?",
+    "ground_truth_answer": "Customers can pay off the Vantage Auto Loan early with no prepayment penalty.",
+    "ground_truth_context_titles": [
+      "Vantage Auto Loan"
+    ],
+    "generated_answer": "Customers can pay off the Vantage Auto Loan early with no prepayment penalty.",
+    "retrieved_context_titles": [
+      "Vantage Auto Loan",
+      "Pinnacle Mortgage"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.354
+    }
+  },
+  {
+    "id": "acme_q025",
+    "question": "What notice period does the Account Closure Policy require before an account is closed?",
+    "ground_truth_answer": "The Account Closure Policy requires a 30-day notice period before an account is closed.",
+    "ground_truth_context_titles": [
+      "Account Closure Policy"
+    ],
+    "generated_answer": "The Account Closure Policy requires a 30-day notice period before an account is closed.",
+    "retrieved_context_titles": [
+      "Account Closure Policy"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.429
+    }
+  },
+  {
+    "id": "acme_q026",
+    "question": "When does a $25 early account closure fee apply?",
+    "ground_truth_answer": "Closure of a Summit Checking Account within 90 days of opening incurs a $25 early account closure fee.",
+    "ground_truth_context_titles": [
+      "Account Closure Policy",
+      "Summit Checking Account"
+    ],
+    "generated_answer": "Closure of a Summit Checking Account within 90 days of opening incurs a $25 early account closure fee.",
+    "retrieved_context_titles": [
+      "Account Closure Policy"
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.412
+    }
+  },
+  {
+    "id": "acme_q027",
+    "question": "What is the monthly service fee for the Beacon Business Account?",
+    "ground_truth_answer": "The Beacon Business Account charges a monthly service fee of $15.00 for accounts with no minimum balance.",
+    "ground_truth_context_titles": [
+      "Beacon Business Account"
+    ],
+    "generated_answer": "The Beacon Business Account charges a monthly service fee of $15.00 for accounts with no minimum balance.",
+    "retrieved_context_titles": [
+      "Beacon Business Account"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.798
+    }
+  },
+  {
+    "id": "acme_q028",
+    "question": "How many named users can be granted card and account access on the Beacon Business Account?",
+    "ground_truth_answer": "Up to five named users can be granted card and account access with individual spending limits.",
+    "ground_truth_context_titles": [
+      "Beacon Business Account"
+    ],
+    "generated_answer": "Up to five named users can be granted card and account access with individual spending limits.",
+    "retrieved_context_titles": [
+      "Beacon Business Account"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.615
+    }
+  },
+  {
+    "id": "acme_q029",
+    "question": "Within how many days must unauthorized transactions be reported to remain protected under the Fraud Liability Policy?",
+    "ground_truth_answer": "Customers must report unauthorized activity to the bank within 60 days to remain protected.",
+    "ground_truth_context_titles": [
+      "Fraud Liability Policy"
+    ],
+    "generated_answer": "The Fraud Liability Policy guarantees zero liability for unauthorized transactions reported within 60 days.",
+    "retrieved_context_titles": [
+      "Fraud Liability Policy"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 0.3,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.187
+    }
+  },
+  {
+    "id": "acme_q030",
+    "question": "What happens to reported fraudulent transactions while the investigation is ongoing?",
+    "ground_truth_answer": "Reported fraudulent transactions are temporarily credited back within two business days.",
+    "ground_truth_context_titles": [
+      "Fraud Liability Policy",
+      "Beacon Business Account"
+    ],
+    "generated_answer": "Reported fraudulent transactions are temporarily credited back within two business days.",
+    "retrieved_context_titles": [
+      "Fraud Liability Policy"
+    ],
+    "metrics": {
+      "recall": 0.5,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.046
+    }
+  },
+  {
+    "id": "acme_q031",
+    "question": "What is the standard deductible for Shield Home Insurance?",
+    "ground_truth_answer": "The standard deductible for Shield Home Insurance is $1,000.",
+    "ground_truth_context_titles": [
+      "Shield Home Insurance"
+    ],
+    "generated_answer": "The standard deductible for Shield Home Insurance is $1,000.",
+    "retrieved_context_titles": [
+      "Shield Home Insurance"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.258
+    }
+  },
+  {
+    "id": "acme_q032",
+    "question": "When does Shield Home Insurance apply a 10 percent discount?",
+    "ground_truth_answer": "Shield Home Insurance discounts of 10 percent apply when home and auto policies are bundled.",
+    "ground_truth_context_titles": [
+      "Shield Home Insurance"
+    ],
+    "generated_answer": "Shield Home Insurance discounts of 10 percent apply when home and auto policies are bundled.",
+    "retrieved_context_titles": [
+      "Shield Home Insurance"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 0.932
+    }
+  },
+  {
+    "id": "acme_q033",
+    "question": "Which water damage types are excluded from Shield Home Insurance coverage?",
+    "ground_truth_answer": "Shield Home Insurance covers water damage from burst pipes but excludes flood and earthquake damage.",
+    "ground_truth_context_titles": [
+      "Shield Home Insurance"
+    ],
+    "generated_answer": "Shield Home Insurance covers water damage from burst pipes but excludes flood and earthquake damage.",
+    "retrieved_context_titles": [
+      "Shield Home Insurance"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.03
+    }
+  },
+  {
+    "id": "acme_q034",
+    "question": "What authentication is required for every new device sign-in on the mobile app?",
+    "ground_truth_answer": "The mobile app requires two-factor authentication for every new device sign-in.",
+    "ground_truth_context_titles": [
+      "Mobile App Security Settings"
+    ],
+    "generated_answer": "The mobile app requires two-factor authentication for every new device sign-in.",
+    "retrieved_context_titles": [
+      "Mobile App Security Settings",
+      "Overdraft Protection Policy"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 0.953
+    }
+  },
+  {
+    "id": "acme_q035",
+    "question": "How can a customer revoke access to a lost or stolen device?",
+    "ground_truth_answer": "Customers can remotely revoke access to a lost or stolen device from the security settings menu.",
+    "ground_truth_context_titles": [
+      "Mobile App Security Settings"
+    ],
+    "generated_answer": "Customers can remotely revoke access to a lost or stolen device from the security settings menu.",
+    "retrieved_context_titles": [
+      "Mobile App Security Settings"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 0.997
+    }
+  },
+  {
+    "id": "acme_q036",
+    "question": "What annual fee does the Apex Investment Portfolio charge?",
+    "ground_truth_answer": "The Apex Investment Portfolio is an automated investment service that charges a fee of 0.25 percent of assets per year.",
+    "ground_truth_context_titles": [
+      "Apex Investment Portfolio"
+    ],
+    "generated_answer": "Withdrawals from the Apex Investment Portfolio are processed within three business days.",
+    "retrieved_context_titles": [
+      "Apex Investment Portfolio"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 0.3333333333333333,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.023
+    }
+  },
+  {
+    "id": "acme_q037",
+    "question": "How often does the Apex Investment Portfolio rebalance the portfolio?",
+    "ground_truth_answer": "The Apex Investment Portfolio automatically rebalances the portfolio back to target allocation quarterly.",
+    "ground_truth_context_titles": [
+      "Apex Investment Portfolio"
+    ],
+    "generated_answer": "Withdrawals from the Apex Investment Portfolio are processed within three business days.",
+    "retrieved_context_titles": [
+      "Apex Investment Portfolio"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 0.3333333333333333,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.135
+    }
+  },
+  {
+    "id": "acme_q038",
+    "question": "How many points does the Cloud Rewards Program award per dollar spent?",
+    "ground_truth_answer": "The Cloud Rewards Program awards one point per dollar spent on qualifying purchases.",
+    "ground_truth_context_titles": [
+      "Cloud Rewards Program"
+    ],
+    "generated_answer": "The Cloud Rewards Program awards one point per dollar spent on qualifying purchases.",
+    "retrieved_context_titles": [
+      "Cloud Rewards Program"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.419
+    }
+  },
+  {
+    "id": "acme_q039",
+    "question": "What statement credit is provided when redeeming 10,000 Cloud Rewards points?",
+    "ground_truth_answer": "Redeeming 10,000 Cloud Rewards points provides a $100 statement credit.",
+    "ground_truth_context_titles": [
+      "Cloud Rewards Program"
+    ],
+    "generated_answer": "Redeeming 10,000 Cloud Rewards points provides a $100 statement credit.",
+    "retrieved_context_titles": [
+      "Cloud Rewards Program"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 1.0,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.472
+    }
+  },
+  {
+    "id": "acme_q040",
+    "question": "Do Cloud Rewards points expire?",
+    "ground_truth_answer": "Points earned under the Cloud Rewards Program never expire while the account remains open.",
+    "ground_truth_context_titles": [
+      "Cloud Rewards Program"
+    ],
+    "generated_answer": "Cloud Rewards points take one to two billing cycles to post to the account.",
+    "retrieved_context_titles": [
+      "Cloud Rewards Program"
+    ],
+    "metrics": {
+      "recall": 1.0,
+      "correctness": 0.36363636363636365,
+      "groundedness": 1.0,
+      "p95_latency_ms": 1.461
+    }
+  }
+]

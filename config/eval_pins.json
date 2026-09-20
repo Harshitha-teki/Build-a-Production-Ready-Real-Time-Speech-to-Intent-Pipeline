@@ -1,0 +1,22 @@
+{
+  "dataset_size": 40,
+  "llm_judge_model": "openai/gpt-4o-mini",
+  "pipeline_a_embedder": "tfidf",
+  "pipeline_b_embedder": "tfidf",
+  "llm_judge_temperature": 0.0,
+  "llm_judge_base_url": "https://api.openai.com/v1",
+  "reciprocity_threshold": 0.40,
+  "pipeline_a": {
+    "name": "baseline",
+    "top_k": 3,
+    "rerank": false
+  },
+  "pipeline_b": {
+    "name": "candidate",
+    "top_k": 6,
+    "rerank": true,
+    "verbosity_enabled": true
+  },
+  "deterministic_answer_coverage_tokens_min": 4,
+  "latency_warmup_runs": 3
+}
